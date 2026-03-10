@@ -1,3 +1,10 @@
+import globImg from "../assets/img/globe.png";
+
 export default function Header() {
-  return <h1 className="text-red-600 underline text-4xl">I'm the header</h1>;
+  return (
+    <header className="bg-header flex items-center justify-center gap-3 py-5">
+      <img src={globImg} alt="Globe" className="w-8" />
+      <h1 className=" text-2xl text-white ">my travel journal</h1>
+    </header>
+  );
 }
